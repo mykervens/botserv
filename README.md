@@ -9,7 +9,7 @@ SHA256 checksum for the `raspbian_botserv_2018-06-01.zip` image:
 
 ## Requirements
 
-* Raspberry Pi 3 (Older versions do not have sufficient processing power, and if they work they will be very slow)
+* Raspberry Pi 3 / Zero / Zero W
 * MicroSD Card (8 GB or larger)
 
 ## Installation
@@ -18,11 +18,11 @@ You will need to use an image writing tool to install the image you have downloa
 
 Etcher is a graphical SD card writing tool that works on Mac OS, Linux and Windows, and is the easiest option for most users. Etcher also supports writing images directly from the zip file, without any unzipping required. To write your image with Etcher:
 
-     -   Download Etcher and install it.
-     -   Connect an SD card reader with the SD card inside.
-     -   Open Etcher and select from your hard drive the Raspberry Pi .img or .zip file you wish to write to the SD card.
-     -   Select the SD card you wish to write your image to.
-     -   Review your selections and click ‘Flash!’ to begin writing data to the SD card.
+ - Download Etcher and install it.
+ - Connect an SD card reader with the SD card inside.
+ - Open Etcher and select from your hard drive the Raspberry Pi .img or .zip file you wish to write to the SD card.
+ - Select the SD card you wish to write your image to.
+ - Review your selections and click ‘Flash!’ to begin writing data to the SD card.
 
 ### Advanced Installation
 - [Windows](https://www.raspberrypi.org/documentation/installation/installing-images/windows.md)
