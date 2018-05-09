@@ -1,6 +1,6 @@
 # BotServ
 
-The Botserv project is an enclosure for a stock Raspberry Pi built around a Raspbian Stretch Lite installation.  The entire project is available as a pre-built micro-SD image ready to be burned and placed into a Raspberry Pi.  You can download the pre-built image here:
+The Botserv project is an sms chatbot server built around Raspbian Stretch Lite.  The entire project is available as a pre-built micro-SD image ready to be burned and placed into a Raspberry Pi.  You can download the pre-built image here:
 
  [![Download img](https://github.com/deldesir/botserv/raw/master/microsd-icon.png "Download img") Botserv 2018-06-01 image](https://botserv-sms.ai/to/botserv-image)
  
