@@ -11,8 +11,6 @@ SHA256 checksum for the `raspbian_botserv_2018-06-01.zip` image:
 
 * Raspberry Pi 3 (Older versions do not have sufficient processing power, and if they work they will be very slow)
 * MicroSD Card (8 GB or larger)
-* Any analog speaker
-* USB Microphone.  Tested with CM108-based microphones.
 
 ## Installation
 
