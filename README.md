@@ -11,6 +11,8 @@ SHA256 checksum for the `raspbian_botserv_2018-06-01.zip` image:
 
 * Raspberry Pi 3 / Zero / Zero W
 * MicroSD Card (8 GB or larger)
+* USB 3G Dongle
+* SIM Card
 
 ## Installation
 
