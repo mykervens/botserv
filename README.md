@@ -36,6 +36,6 @@ Etcher is a graphical SD card writing tool that works on Mac OS, Linux and Windo
 Check out the project wiki [here](https://github.com/deldesir/botserv/wiki).
 
 ## Schools involved in the project
- Collège Immaculée Conception | Gonaives, HAITI
- Ecole Nationale Congréganiste Cyr-Guillo | Gonaives, HAITI
- Institution Mixte Saint-Viateur | Gonaives, HAITI
+ 1- Collège Immaculée Conception | Gonaives, HAITI
+ 2- Ecole Nationale Congréganiste Cyr-Guillo | Gonaives, HAITI
+ 3- Institution Mixte Saint-Viateur | Gonaives, HAITI
