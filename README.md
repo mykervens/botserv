@@ -1,6 +1,6 @@
 # BotServ
 
-The Botserv project is an sms chatbot server built around Raspbian Stretch Lite.  The entire project is available as a pre-built micro-SD image ready to be burned and placed into a Raspberry Pi.  You can download the pre-built image here:
+The Botserv project is an sms chatbot server built around Raspbian Stretch Lite for educative purpose.  The entire project is available as a pre-built micro-SD image ready to be burned and placed into a Raspberry Pi and post-installation scripts for configuration.  You can download the pre-built image here:
 
 ![-](https://github.com/deldesir/botserv/raw/master/microsd-icon.png) [*Link will be available soon*]
  
@@ -33,4 +33,9 @@ Etcher is a graphical SD card writing tool that works on Mac OS, Linux and Windo
 
 
 ## Help and more info
-Check out the project wiki [here](https://github.com/deldesir/botserv/wiki).  
+Check out the project wiki [here](https://github.com/deldesir/botserv/wiki).
+
+## Schools involved in the project
+ - Collège Immaculée Conception | Gonaives, HAITI
+ - Ecole Nationale Congréganiste Cyr-Guillo | Gonaives, HAITI
+ - Institution Mixte Saint-Viateur | Gonaives, HAITI
