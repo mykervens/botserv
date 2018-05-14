@@ -1,7 +1,7 @@
 #!/bin/bash
 # Please add that command in /etc/udev/rules.d/99-usbhook.rules to run script when a usb drive is plugged in
 #
-#	ACTION=="add",KERNEL=="sd*", SUBSYSTEMS=="usb", ATTRS{product}=="*", RUN+="/home/stf/usbhook.sh %k"
+#	ACTION=="add",KERNEL=="sd*", SUBSYSTEMS=="usb", ATTRS{product}=="*", RUN+="/home/botserv/usbhook.sh %k"
 #
 #	(Change run command according to the location of that script)
 #
@@ -14,8 +14,8 @@ LOG_FILE=/var/log/usbhook
 exec > >(tee -a ${LOG_FILE} )
 exec 2> >(tee -a ${LOG_FILE} >&2)
 
-# CONFIGURATION: Source folder
-SRC="/home/stf/usb_source"
+# CONFIGURATION: Destination folder
+DEST="/home/botserv/brain"
 
 DEVICE="$1" # the device name
 
@@ -32,15 +32,10 @@ mkdir /tmp/"$DEVICE"
 # Mount ntfs usb drive
 mount -t ntfs-3g /dev/"$DEVICE"1 /tmp/"$DEVICE"
 
-cp -R "$SRC"/* /tmp/"$DEVICE"
-chmod 777 -R /tmp/"$DEVICE"
+cp -R /tmp/"$DEVICE"/*.rive "$DEST"/
+chmod 777 -R "$DEST"/*
 
 umount /tmp/"$DEVICE"
 rm -r /tmp/"$DEVICE"
-
-echo "Copy to $DEVICE  >> Done !"
-
-export DISPLAY=:0
-sudo -u stf notify-send "Copy to $DEVICE >> Done !" -t 5000
 
 exit 0
