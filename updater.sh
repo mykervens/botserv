@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# Script to grab custom brain files from usb. ###################################################################
 # Please add that command in /etc/udev/rules.d/99-usbhook.rules to run script when a usb drive is plugged in
 #
 #	ACTION=="add",KERNEL=="sd*", SUBSYSTEMS=="usb", ATTRS{product}=="*", RUN+="/home/botserv/usbhook.sh %k"
