@@ -38,7 +38,7 @@ Etcher se yon zouti grafik kap pèmèt ou ekri imaj la sou kat memwa w la. Li ma
 
  - Telechaje Etcher epi enstale li.
  - Branche yon lektè kat memwa ak tout kat memwa w la ladan l.
- - Ouvri Etcher epi seleksyone imaj ou te download pou Raspberry Pi a.
+ - Ouvri Etcher epi seleksyone imaj ou te telechaje pou Raspberry Pi a.
  - Seleksyone kat memwa ou vle mete imaj la sou li a.
  - Revize chwa w fè yo epi klike ‘Flash!’ pou w ka lanse ekriti done yo sou kat memwa a.
 
