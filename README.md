@@ -1,5 +1,5 @@
 <p align="center">
-  <span>Krey&ogravel; Ayisyen</span> |
+  <span>Krey&ograve; Ayisyen</span> |
   <a href="https://github.com/novaed/botserv/blob/master/README.en.md">English</a> |
   <a href="https://github.com/novaed/botserv/blob/master/README.fr.md">Français</a>
 </p>
