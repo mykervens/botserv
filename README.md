@@ -1,3 +1,20 @@
+<p align="center">
+  <span>Krey&ogravel; Ayisyen</span> |
+  <a href="https://github.com/novaed/botserv/blob/master/README.en.md">English</a> |
+  <a href="https://github.com/novaed/botserv/blob/master/README.fr.md">Français</a>
+</p>
+
+---
+
+[![License](http://img.shields.io/badge/License-MIT-blue.svg)](http://opensource.org/licenses/MIT)
+[![PayPal Donate](https://img.shields.io/badge/donate-PayPal.me-ff69b4.svg)](*link will be available soon*)
+&nbsp;&nbsp; **|**&nbsp;&nbsp; *7Kb gziped* &nbsp;&nbsp;**|**&nbsp;&nbsp; *Maintained by [NovaED](https://novaed.github.io)*
+
+- [Frequently Answered Questions](https://github.com/alvarotrigo/fullPage.js/wiki/FAQ---Frequently-Answered-Questions)
+
+---
+
+
 # BotServ
 
 The Botserv project is an sms chatbot server built around Raspbian Stretch Lite for educational purpose.  The entire project is available as a pre-built micro-SD image ready to be burned and placed into a Raspberry Pi and post-installation scripts for configuration.  You can download the pre-built image here:
