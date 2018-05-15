@@ -10,7 +10,7 @@
 [![PayPal Donate](https://img.shields.io/badge/donate-PayPal.me-ff69b4.svg)](*link will be available soon*)
 &nbsp;&nbsp; **|**&nbsp;&nbsp; *__ Mb gziped* &nbsp;&nbsp;**|**&nbsp;&nbsp; *Maintained by [NovaED](https://novaed.github.io)*
 
-- [Frequently Answered Questions](https://github.com/novaed/botserv/wiki/FAQ---Frequently-Answered-Questions)
+- [Frequently Asked Questions](https://github.com/novaed/botserv/wiki/FAQ)
 
 ---
 
