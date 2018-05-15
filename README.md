@@ -7,7 +7,7 @@
 ---
 
 [![License](http://img.shields.io/badge/License-MIT-blue.svg)](http://opensource.org/licenses/MIT)
-&nbsp;&nbsp; **|**&nbsp;&nbsp; *__ Mb tou zipe* &nbsp;&nbsp;**|**&nbsp;&nbsp; *Maintained by [NovaEd](https://novaed.github.io)*
+&nbsp;&nbsp; **|**&nbsp;&nbsp; *__ Mb tou zipe* &nbsp;&nbsp;**|**&nbsp;&nbsp; *Fèt pa [NovaEd](https://novaed.github.io)* ak kontribitè yo
 
 - [Kesyon moun plis poze](https://github.com/novaed/botserv/wiki/FAQ)
 
