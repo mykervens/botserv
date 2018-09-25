@@ -27,8 +27,7 @@ SHA256 checksum pou imaj `raspbian_botserv_2018-06-01.zip`:
 
 * Raspberry Pi 3 / Zero / Zero W
 * Kat MicroSD (8 GB oswa plis)
-* USB 3G Dongle
-* Kat SIM
+* Telefòn Android
 
 ## Enstalasyon
 
