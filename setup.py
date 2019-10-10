@@ -81,7 +81,7 @@ if __name__ == '__main__':
         install_requires=requires,
         entry_points={
             'console_scripts': [
-                'distribubot=botserv.botserv:main',
+                'botserv=botserv.__main__',
             ],
         },
         include_package_data=True,
