@@ -16,7 +16,7 @@
 
 # BotServ
 
-Pwojè BotServ la se yon sèvè chatbot ki pèmèt kominikasyon pa sms. Li bati avèk Raspbian e li fèt pou edikasyon. Tout pwojè a disponib antanke yon imaj prepare ou ka kopye sou yon kat memwa pou w mete aprè nan yon Raspberry Pi. Gen de twa skrip konfigirasyon tou ki mache avè l. Ou ka telechaje imaj la sou lyen sa:
+BotServ la se yon sèvè chatbot ki pèmèt kominikasyon. Li fèt pou pèmèt enteraksyon sou blockchain Steem atravè yon kont ki dedye pou sa. BotServ poukont pa l disponib antanke yon imaj prepare ou ka kopye sou yon kat memwa pou w mete aprè nan yon Raspberry Pi. Gen de twa skrip konfigirasyon tou ki mache avè l siw vle enstale l poukont ou.. Ou ka telechaje imaj la sou lyen sa:
 
 ![-](https://github.com/NovaEd/botserv/raw/master/microsd-icon.png) [*Link will be available soon*]
  
