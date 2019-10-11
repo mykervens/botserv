@@ -6,7 +6,7 @@ from botserv import BOT, LOGS
 from botserv.commands import ALL_COMMANDS
 
 for command_name in ALL_COMMANDS:
-    imported_command = importlib.import_command("botserv.commands." + command_name)
+    imported_command = importlib.import_module("botserv.commands." + command_name)
 
 if len(sys.argv) not in (1, 3, 4):
     quit(1)
