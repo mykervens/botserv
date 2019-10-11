@@ -4,7 +4,6 @@ from pathlib import Path
 import logging
 from datetime import datetime
 from pyrogram import Client
-import dotenv
 import sqlite3
 
 # We need logging this early for our Version Check
@@ -26,21 +25,15 @@ __source__ = 'https://github.com/novaed/botserv'
 __copyright__ = 'Copyright (c) 2019 ' + __author__
 __copystring__ = f"BotServ v{__version__} | {__copyright__}"
 
-# Load our .env file
-dotenv.load_dotenv()
+# Change with genuine values
+API_ID = 123456789
+API_HASH = "dgsdfgsdfaa13232fsfw335"
 
-# Get the Values from our .env
-API_ID = os.getenv("API_ID")
-API_HASH = os.getenv("API_HASH")
-
-LOGGER = os.getenv("LOGGER")
+LOGGER = True
 try:
-    LOGGER_GROUP = int(os.getenv("LOGGER_GROUP"))
+    LOGGER_GROUP = -12345567890
 except ValueError:
-    LOGGER_GROUP = os.getenv("LOGGER_GROUP")
-
-ACCGEN_API = os.getenv("ACCGEN_API")
-CC_API = os.getenv("CC_API")
+    LOGGER_GROUP = "LOGGER_GROUP"
 
 # Create Database if there is none yet.
 BOTSERV_DB = str(Path(__file__).parent.parent / 'botserv.db')
