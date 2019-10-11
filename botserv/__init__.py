@@ -43,7 +43,7 @@ ACCGEN_API = os.getenv("ACCGEN_API")
 CC_API = os.getenv("CC_API")
 
 # Create Database if there is none yet.
-PYRO_DB = str(Path(__file__).parent.parent / 'botserv.db')
+BOTSERV_DB = str(Path(__file__).parent.parent / 'botserv.db')
 
 LOGS.info("Checking Database...")
 db = sqlite3.connect(BOTSERV_DB)
