@@ -57,7 +57,7 @@ if __name__ == '__main__':
     setup(
         name='botserv',
         version=VERSION,
-        description='Bot pou transfere Steem',
+        description='Bot pou entèraksyon nan yon kont Steem',
         url='http://novaed.github.io/botserv',
         # long_description=get_long_description(),
         author='Blondel MONDESIR',
