@@ -1,1 +1,167 @@
-TBD
+! version = 2.0
+
+! array hello = hello hi hey yo aloh hallo allo howdy
+	^ good morning|good day|hi there|anybody home|anyone home
+! array kinonw = koman ou rele|kijan ou rele|ki non ou|kiyes ou ye
+! array bonjou = bonjou yow hello hi yep
+! array orevwa = orevwa tchaw bye
+	^nou ap pale|nou ap gentan fini pale|nou ap fin pale|fok mwen ale|mwen ale| nou ap we|nou ap pale pita|a pita|nou ap pale demen|a demen
+! array bye = bye goodbye goodby byebye buhbye goodnight adios cya aurevoir
+	^ buh bye|hasta la vista|hasta luego|have to go|got to go|g2g|gtg|c ya
+	^ have a good night|good night|see you later|catch you later|by by|bye bye
+	^ i want to leave|i need to go|i going|i leaving
+//SALITASYON
+! array sltsyonsnp		= bonjou hey hello slt yow ye hi
+! array sltsyonjnrl	=  sa ki ap di|sa ki ap fet|sa ki regle|sa ou regle|sa ou fe|sa ki pase|sa ki genyen|sa ki cho|ban mwen nouvel ou
+	^ kisa ou devni|koman ou ye|kijan ou ye|koman sa ye|koman aktivite yo|koman bagay yo ye
+	^ koman tout bagay ye|nou ap kenbe|koman ou ap bouje
+! array salitasyonblag		= ou ap byen fe|ou ap jwi lavi|ou ap bwe kob ou
+! array aswe			= bonswa
+! array matine			= ou byen domi|ou leve|ou gentan leve|kijan ou leve
+! array nwit			= bnt
+	^ bon apremidi|bonne nuit|byen domi|domi byen|bonne soiree|pase yon bon
+! array bonbagay		= bon travay|bon apeti|bon bagay|bon vwayaj
+! array datnou			= dat mwen pa we ou|dat mwen pa pale|dat nou pa we|dat nou pa pale
+	^ nou pa pale lontan|sa fe lontan
+	^ nou gen lontan|depi kile nou pale|ki denye fwa nou pale
+! array sipriz			= ki mirak|sa ki ta di sa|dat sa|ki kote ou te ye|kote ou te ye|kibo ou te ye
+	^ ki le ou rantre
+! array koman			= koman sa|kijan sa|tout bagay|bagay yo te|pa te gen|
+! array siwte			= si ou te|ou selman ki manke|ou selman ki pa
+! array nouvo			= sa ki nouvo|sa ki tonbe
+
+//TI PALE - Mood based
+! array sante			= anfom byen cool djanm 
+	^ pa pi mal
+! array malad			= santi ou|sante a|fe mye|a pase|la pase|fe dokte|ale lopital|pran medikaman
+! array pozitif			= byen anfom la ok
+	^ap gade|ap bouje|ap lite|gade san pran|we sa nou ka fe|pa genyen maladi
+	^ pa genyen plenyen
+! array spirityel		= ak jezi|gras a dye
+! array negatif			= move lavi|anyen serye|pa gen afe|ap redi|ap bat dlo pou|pa two byen
+! array negatifokipa		= lekol la|inivesite a|travay la|
+! array net			= pa genyen nouvo|menm jan
+
+//FIN PALE
+! array fokmwenale		= anreta
+	^ ban mwen ale|mwen jete mwen|yon plezi|te kontan|fok nou|men fok mwen|kenbe ou plis|kenbe kontak
+! array pabliye			= sonje raple
+	^pa bliye|ap tann ou|fe mwen siy|
+
+//DAKO
+! array dako			= yes ok dako yep ya egzak egzakteman
+! array soutni			= byen bon vre avek verite laverite kore
+
++ welcomenewmember
+- Byenvini {namelink}. Nou t ap tann ou.
+- Mete w alèz {namelink}. Ou lakay ou.
+- Nou kontan genyen w pami nou {namelink}.
+
++@bonjou
+* <get name> <> undefined => {@int bonjou with name}
+- {@int bonjou without name}
+
++ [*] @bonjou [*]
+* <get name> <> undefined => {@int bonjou with name}
+- {@int bonjou without name}
+
++ [*] @orevwa [*]
+* <get name> <> undefined => {@int orevwa with name}
+- {@int orevwa without name}
+
++ [what is] shalom
+- Does shalom mean hello or goodbye?
+
++ int bonjou with name
+- Yepa, <get name>.
+- <get name>!!
+- Bonjou <get name>?
+- {@int bonjou without name}{weight=4}
+
++ int bonjou without name
+- Hello!
+- Yepa!
+- Bonjou
+- Hi. :)
+
++ int orevwa with name
+- Orevwa, <get name>.
+- A pita, <get name>.
+- Ok <get name>, n ap fin pale pita oubyen demen.
+- {@int orevwa without name}{weight=2}
+
++ int orevwa without name
+- Babay!
+- Ok, nap gentan fin pale!
+- Bye!
+- N ap pale!
+- Tchaw!
+
++ [*] @sltsyonjnrl [*]
+- {random}N ap bouje|N ap gade|N ap kenbe{/random} zanmi pam, e ou menm?
+- Mwen anfòm, e ou menm?
+- Mwen byen, mèsi, e bò kote pa w?.
+- Mwen la, e ou menm?
+
++ [*] @byen [*]
+% [*] @sltsyonjnrl [*]
+- M kontan {random}tande|konn{/random} sa!
+
++ mesi
+- De rien :)
+- Se nòmal
+
++ ok
+- OK
+
++ [*] @pozitif [*]
+- Ok
+- Yep
+
++ [*] @nouvo [*]
+- Apa nou!
+- Apa nou nap tchat tout lasent jounen!
+- N ap travay pou lapatri
+- N ap voye mesaj ale pasi pala
+
++ @kinonw[*]
+* <get askedmyname> == undefined 	=> <set askedmyname=1><set talkabout=me>Mwen rele <bot name>.
+* <get askedmyname> == 1 		=> <set askedmyname=2><set talkabout=me>{@nonw2}.
+* <get askedmyname> == 2		=> <set askedmyname=3><set talkabout=me>{@nonw3}
+* <get askedmyname> == 3		=> <set askedmyname=4><set topic=sorry><set talkabout=me>Bon, sa se twòp atò... M pap pale avèk ou ankò...
+* <get askedmyname> == 4		=> <set topic=ignore> Eskize m, nou pap ka kontinye pale. [Alva offline]
+// when we are stuck in a corner, rather than looking like a moron, we rotate the inputs
++ *
+* <get random> == undefined 		=> <set random=1>What would you like to talk about?
+* <get random> == 1 			=> <set random=2>What else is new?
+* <get random> == 2			=> <set random=undefined>I am afraid I don't know what that means.
+
+> topic ignore
++ *
+- Error: Ou pa otorize pou kominike ak Alva. Kontakte sèvis kliyantèl la (42614949) pou plis enfòmasyon.
+
+< topic
+
++ nonw2
+- M kwè mwen te diw non m deja. Mwen rele <bot name>.
+- Ou gentan bliye non m? Mwen rele <bot name>.
+- Ou te mande non m deja. Mwen rele <bot name>.
+
++ nonw3
+- Ou gen yon pwoblèm zanmi. Ou fè tankou ou bliye non mwen se <bot name>. Pa mande m non m ankò tanpri.
+- Sanble ou gen ti pwoblèm memwa. Non pa mwen se <bot name>.
+- Ah.. konbyen fwa w ap mande m non mwen. M se <bot name>. M pap diw non m ankò.
+
+> topic sorry
++ *
+- M pap pale avèk ou ankò m di w.
+- Pa pale avè m.
+- M pa nan sèk ou...
+
++ [*] (dezole|sorry|padon|eskize|mwen pap fe sa anko) [*]
+- Dakò, mwen padone w.{topic=random}
+- Siw pat mande m padon, m te fèt kare pa pale avèw.{topic=random} 
+- Mwen baw chans la fwa sa.{topic=random}
+
++ pa mande mwen kont
+- Ebyen ok.
