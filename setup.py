@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-"""Packaging logic for beem."""
 import codecs
 import io
 import os
@@ -25,7 +23,11 @@ requires = [
     "requests",
     "pyrogram",
     "tgcrypto",
-    "python-dotenv"
+    "python-dotenv",
+    "rivescript",
+    "Flask",
+    "redis",
+    "six"
 ]
 
 
@@ -75,7 +77,7 @@ if __name__ == '__main__':
             'Programming Language :: Python :: 3.4',
             'Programming Language :: Python :: 3.5',
             'Programming Language :: Python :: 3.6',
-            'Development Status :: 4 - Beta',
+            'Development Status :: Beta',
             'Intended Audience :: Developers',
         ],
         install_requires=requires,
