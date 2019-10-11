@@ -129,12 +129,12 @@
 * <get askedmyname> == 1 		=> <set askedmyname=2><set talkabout=me>{@nonw2}.
 * <get askedmyname> == 2		=> <set askedmyname=3><set talkabout=me>{@nonw3}
 * <get askedmyname> == 3		=> <set askedmyname=4><set topic=sorry><set talkabout=me>Bon, sa se twòp atò... M pap pale avèk ou ankò...
-* <get askedmyname> == 4		=> <set topic=ignore> Eskize m, nou pap ka kontinye pale. [Alva offline]
+* <get askedmyname> == 4		=> <set topic=ignore> Eskize m, nou pap ka kontinye pale. [BotServ offline]
 // when we are stuck in a corner, rather than looking like a moron, we rotate the inputs
 + *
-* <get random> == undefined 		=> <set random=1>What would you like to talk about?
-* <get random> == 1 			=> <set random=2>What else is new?
-* <get random> == 2			=> <set random=undefined>I am afraid I don't know what that means.
+* <get random> == undefined 		=> <set random=1>Ki rekèt ou ta renmen fè?
+* <get random> == 1 			=> <set random=2>Ki kesyon ou genyen sou Steem?
+* <get random> == 2			=> <set random=undefined>Updating...
 
 > topic ignore
 + *
